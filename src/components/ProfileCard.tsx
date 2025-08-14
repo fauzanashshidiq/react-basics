@@ -5,11 +5,11 @@ type ProfileCardProps = {
 };
 
 const ProfileCard = (props: ProfileCardProps) => {
-  const { name = "Anonim", year, job } = props;
+  const { name, year, job } = props;
 
   return (
     <div className="card">
-      <p>Nama: {name}</p>
+      <p>Nama: {name || "Anonim"}</p>
       <p>Birth Year: {year}</p>
       {props.job && <p>Job: {job}</p>}
     </div>
