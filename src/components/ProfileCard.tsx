@@ -1,15 +1,17 @@
 type ProfileCardProps = {
-  name: string;
+  name?: string;
   year: number;
   job?: string;
 };
 
 const ProfileCard = (props: ProfileCardProps) => {
+  const { name = "Anonim", year, job } = props;
+
   return (
     <div className="card">
-      <p>Nama: {props.name}</p>
-      <p>Birth Year: {props.year}</p>
-      {props.job && <p>Job: {props.job}</p>}
+      <p>Nama: {name}</p>
+      <p>Birth Year: {year}</p>
+      {props.job && <p>Job: {job}</p>}
     </div>
   );
 };
