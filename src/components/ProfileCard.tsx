@@ -9,7 +9,7 @@ const ProfileCard = (props: ProfileCardProps) => {
     <div className="card">
       <p>Nama: {props.name}</p>
       <p>Birth Year: {props.year}</p>
-      {props.job ? <p>Job: {props.job}</p> : null}
+      {props.job && <p>Job: {props.job}</p>}
     </div>
   );
 };
