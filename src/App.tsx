@@ -5,10 +5,12 @@ function App() {
   return (
     <>
       <Header />
-      <ProfileCard />
-      <ProfileCard />
-      <ProfileCard />
-      <ProfileCard />
+      <div style={{ gap: "8px", display: "flex", flexDirection: "row" }}>
+        <ProfileCard />
+        <ProfileCard />
+        <ProfileCard />
+        <ProfileCard />
+      </div>
     </>
   );
 }
