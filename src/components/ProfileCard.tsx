@@ -1,9 +1,13 @@
 function ProfileCard() {
+  const name = "Fauzan";
+  const year = 2003;
+  const job = "Student";
+
   return (
     <div className="card">
-      <p>Nama: Fauzan</p>
-      <p>Birth Year: 2003</p>
-      <p>Job: Student</p>
+      <p>Nama: {name}</p>
+      <p>Birth Year: {year}</p>
+      <p>Job: {job}</p>
     </div>
   );
 }
