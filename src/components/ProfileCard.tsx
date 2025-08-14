@@ -1,7 +1,7 @@
 type ProfileCardProps = {
   name: string;
   year: number;
-  job: string;
+  job?: string;
 };
 
 const ProfileCard = (props: ProfileCardProps) => {
@@ -9,7 +9,7 @@ const ProfileCard = (props: ProfileCardProps) => {
     <div className="card">
       <p>Nama: {props.name}</p>
       <p>Birth Year: {props.year}</p>
-      <p>Job: {props.job}</p>
+      {props.job ? <p>Job: {props.job}</p> : null}
     </div>
   );
 };
