@@ -6,10 +6,10 @@ function App() {
     <>
       <Header />
       <div style={{ gap: "8px", display: "flex", flexDirection: "row" }}>
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
+        <ProfileCard name="Fauzan" job="Student" year={2003} />
+        <ProfileCard name="Pak Dika" job="Dosen" year={1990} />
+        <ProfileCard name="Theo" job="Content Creator" year={200} />
+        <ProfileCard name="Yaree" job="Student" year={2003} />
       </div>
     </>
   );

@@ -1,15 +1,17 @@
-function ProfileCard() {
-  const name = "Fauzan";
-  const year = 2003;
-  const job = "Student";
+type ProfileCardProps = {
+  name: string;
+  year: number;
+  job: string;
+};
 
+const ProfileCard = (props: ProfileCardProps) => {
   return (
     <div className="card">
-      <p>Nama: {name}</p>
-      <p>Birth Year: {year}</p>
-      <p>Job: {job}</p>
+      <p>Nama: {props.name}</p>
+      <p>Birth Year: {props.year}</p>
+      <p>Job: {props.job}</p>
     </div>
   );
-}
+};
 
 export default ProfileCard;
