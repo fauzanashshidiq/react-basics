@@ -34,13 +34,13 @@ function App() {
     <>
       <Header />
       <div style={{ gap: "8px", display: "flex", flexDirection: "row" }}>
-        {teachers.map((teachers) => {
+        {teachers.map((teacher) => {
           return (
             <ProfileCard
-              name={teachers.name}
-              year={teachers.year}
-              job={teachers.job}
-              key={teachers.id}
+              name={teacher.name}
+              year={teacher.year}
+              job={teacher.job}
+              key={teacher.id}
             />
           );
         })}
