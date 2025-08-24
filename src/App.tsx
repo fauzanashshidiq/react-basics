@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import Header from "./components/Header";
 import ProfileCard from "./components/ProfileCard";
 
@@ -31,21 +32,12 @@ const teachers: Teacher[] = [
 
 function App() {
   return (
-    <>
+    <div style={{ padding: "16px 48px" }}>
       <Header />
-      <div style={{ gap: "8px", display: "flex", flexDirection: "row" }}>
-        {teachers.map((teacher) => {
-          return (
-            <ProfileCard
-              name={teacher.name}
-              year={teacher.year}
-              job={teacher.job}
-              key={teacher.id}
-            />
-          );
-        })}
-      </div>
-    </>
+      {/* <div style={{ gap: "8px", display: "flex", flexDirection: "row" }}>
+      </div> */}
+      <Counter />
+    </div>
   );
 }
 
