@@ -1,9 +1,16 @@
 const Counter = () => {
+  const handleDecreament = () => {
+    alert("decreament");
+  };
+  const handleIncreament = () => {
+    alert("decreament");
+  };
+
   return (
     <div style={{ display: "flex", gap: "16px" }}>
-      <button>Kurang</button>
+      <button onClick={handleDecreament}>Kurang</button>
       <p>0</p>
-      <button>Tambah</button>
+      <button onClick={handleIncreament}>Tambah</button>
     </div>
   );
 };
