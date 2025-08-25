@@ -11,7 +11,7 @@ const Counter = () => {
   return (
     <div style={{ display: "flex", gap: "16px" }}>
       <button onClick={handleDecreament}>Kurang</button>
-      <p>{count}</p>
+      <p style={{ fontSize: "40px" }}>{count}</p>
       <button onClick={handleIncreament}>Tambah</button>
     </div>
   );
