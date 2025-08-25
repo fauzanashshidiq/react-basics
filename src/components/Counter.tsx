@@ -3,9 +3,11 @@ const Counter = () => {
 
   const handleDecreament = () => {
     alert("decreament");
+    count -= 1;
   };
   const handleIncreament = () => {
     alert("decreament");
+    count += 1;
   };
 
   return (
