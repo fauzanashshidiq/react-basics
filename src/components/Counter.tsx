@@ -7,13 +7,13 @@ const Counter = () => {
   const handleDecreament = () => {
     // alert("decreament");
     // count -= 1;
-    setCount(-1);
+    setCount(count - 1);
   };
   const handleIncreament = () => {
     // alert("decreament");
     // count += 1;
 
-    setCount(1);
+    setCount(count + 1);
   };
 
   return (
