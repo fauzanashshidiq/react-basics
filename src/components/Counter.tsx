@@ -1,13 +1,19 @@
+import { useState } from "react";
+
 const Counter = () => {
-  let count = 0;
+  const [count, setCount] = useState(0);
+  // let count = 0;
 
   const handleDecreament = () => {
-    alert("decreament");
-    count -= 1;
+    // alert("decreament");
+    // count -= 1;
+    setCount(-1);
   };
   const handleIncreament = () => {
-    alert("decreament");
-    count += 1;
+    // alert("decreament");
+    // count += 1;
+
+    setCount(1);
   };
 
   return (
