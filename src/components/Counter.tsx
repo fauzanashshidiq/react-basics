@@ -16,11 +16,16 @@ const Counter = () => {
     setCount(count + 1);
   };
 
+  const handleResetCounter = () => {
+    setCount(0);
+  };
+
   return (
     <div style={{ display: "flex", gap: "16px" }}>
       <button onClick={handleDecreament}>Kurang</button>
       <p style={{ fontSize: "40px" }}>{count}</p>
       <button onClick={handleIncreament}>Tambah</button>
+      <button onClick={handleResetCounter}>RESET</button>
     </div>
   );
 };
