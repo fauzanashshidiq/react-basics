@@ -2,17 +2,10 @@ import { useState } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  // let count = 0;
-
   const handleDecreament = () => {
-    // alert("decreament");
-    // count -= 1;
     setCount(count - 1);
   };
   const handleIncreament = () => {
-    // alert("decreament");
-    // count += 1;
-
     setCount(count + 1);
   };
 
